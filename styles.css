@@ -1,0 +1,113 @@
+* 
+{
+    box-sizing: border-box;
+}
+
+img 
+{ 
+    image-rendering: optimizeSpeed;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: -o-crisp-edges;
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: pixelated;
+    image-rendering: optimize-contrast;                      
+}
+
+body
+{
+    background-image: url(assets/background.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+section
+{
+    margin: auto;
+    max-width: 800px;
+    display: -webkit-flex;
+    display: flex;
+}
+
+nav
+{
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    padding: 5px;
+    text-align: center;
+    background-color: rgba(57,23,94,0.5);
+}
+            
+nav ul
+{
+    list-style-type: none;
+    padding: 0;
+}
+
+a:link
+{
+    color: magenta;
+}
+
+a:visited
+{
+    color: purple;
+}
+
+a:hover
+{
+    color: magenta;
+}
+
+a:active
+{
+    color: magenta;
+}
+
+article
+{
+    background-color: rgba(93,57,132,0.5);
+    -webkit-flex: 3;
+    -ms-flex: 3;
+    flex: 3;
+    padding: 20px;
+    color: white;
+}
+
+footer
+{
+    margin: auto;
+    max-width: 800px;
+    font-family:Impact, Haettenschweiler;
+    background-color: rgba(44,12,79,0.5);
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+header
+{
+    margin: auto;
+    max-width: 800px;
+    background-color: rgba(44,12,79,0.5);
+    font-size: 35px;
+    font-family: Courier;
+    font: bold;
+    padding: 30px;
+    text-align: center;
+    color: white;
+}
+
+h2
+{
+    font-family: courier;
+}
+
+@media (max-width: 600px)
+{
+    section
+    {
+        -webkit-flex-direction: column;
+        flex-direction: column;
+    }
+}
